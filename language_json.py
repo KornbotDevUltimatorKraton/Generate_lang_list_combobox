@@ -112,5 +112,5 @@ for r in range(0,len(lang_dat)):
       #print(r,Languages.get(lang_dat[r]))
       print("<option value = 'channel_'"+str(r)+">"+lang_dat[r]+"</option>")
       file = open("languages_combobox.txt",'a')
-      file.writelines("<option value = 'channel_'"+str(r)+">"+Languages.get(lang_dat[r])+"</option>\n")
+      file.writelines('<option value="channel_'+str(r)+'">'+Languages.get(lang_dat[r])+"</option>\n")
       file.close()
